@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FantEO Management & Consulting</title>
+  <meta name="description" content="FantEO Management and Consulting is a boutique consultancy providing expert and friendly management for Space and Earth Observation projects, making complex collaborations smooth, efficient, and enjoyable." />
+  <meta name="theme-color" content="#020915" />
+
+  <meta property="og:title" content="FantEO Management & Consulting" />
+  <meta property="og:description" content="Boutique consultancy providing expert and friendly management for Space and Earth Observation projects." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/fanteo-landing-background.png" />
+
+  <style>
+    :root {
+      --bg: #020915;
+      --accent: #08c8ff;
+      --text: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .page {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      min-height: 640px;
+      background-image: url("assets/fanteo-landing-background.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      background-color: #020915;
+    }
+
+    /* The generated image already contains the full visual layout.
+       These transparent links sit over the email/domain areas so the page behaves like a real landing page. */
+    .hotspot {
+      position: absolute;
+      display: block;
+      border-radius: 999px;
+      text-indent: -9999px;
+      overflow: hidden;
+      outline-offset: 4px;
+    }
+
+    .hotspot:focus-visible {
+      outline: 2px solid var(--accent);
+      background: rgba(8, 200, 255, 0.12);
+    }
+
+    .email-link {
+      left: 35.7%;
+      top: 72.8%;
+      width: 28.6%;
+      height: 6.8%;
+    }
+
+    .domain-link {
+      left: 43.4%;
+      top: 94.2%;
+      width: 13.2%;
+      height: 3.5%;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-aspect-ratio: 3 / 2) {
+      .page {
+        background-size: cover;
+      }
+    }
+
+    @media (max-width: 760px) {
+      body { overflow: auto; }
+      .page {
+        min-height: 100svh;
+        background-size: cover;
+      }
+      .email-link {
+        left: 24%;
+        top: 72.5%;
+        width: 52%;
+      }
+      .domain-link {
+        left: 36%;
+        top: 94%;
+        width: 28%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="FantEO Management and Consulting landing page">
+    <section class="sr-only">
+      <h1>FantEO Management & Consulting</h1>
+      <p>FantEO Management and Consulting is a boutique consultancy providing expert and friendly management for Space and Earth Observation projects, making complex collaborations smooth, efficient, and enjoyable.</p>
+      <p>Daniele Fantin, Founder & CEO. Based in Oslo, Norway.</p>
+      <p>Email: fantin@fanteo.space</p>
+    </section>
+
+    <a class="hotspot email-link" href="mailto:fantin@fanteo.space" aria-label="Email Daniele Fantin at fantin@fanteo.space">Email FantEO</a>
+    <a class="hotspot domain-link" href="https://fanteo.space" aria-label="Visit fanteo.space">fanteo.space</a>
+  </main>
+</body>
+</html>
